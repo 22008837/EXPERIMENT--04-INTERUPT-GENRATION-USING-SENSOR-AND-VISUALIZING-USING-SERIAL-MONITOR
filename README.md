@@ -1,21 +1,11 @@
-###  DATE: 
-
-###  NAME: Prabha C
-###  ROLL NO : 212222110032
-###  DEPARTMENT: CSE(IOT)
-
-
 # EXPERIMENT--04-INTERUPT-GENRATION-USING-SENSOR-AND-VISUALIZING-USING-SERIAL-MONITOR
-
 ### Aim:
 To Interface a IR Sensor to digital port of iot development board  and generate an interrupt and visualize on the serial monitor 
 
 ### Components required:
 STM32 CUBE IDE,  serial port utility monitor .
 
-
 ## Theory :
-
 An infrared (IR) sensor a proximity sensor, or a ‘nearness’ sensor senses whether there is an object near it or not. The IR stands for Infrared sensor. Infrared is the light out of our visible spectrum.
 
 Working of an IR Sensor
@@ -39,7 +29,6 @@ Connect OUT to any gpio and configure that pin as EXTI mode
 
 ### Interrupts
 
-
 Interrupts are asynchronous (i.e. can happen anytime) events that disrupt the normal flow of your program. This allows the microcontroller to focus on a key task and attend to these events (e.g. pressing a button) as they come without needing to wait for them.
 
 With interrupt, we do not need to continuously check the state of the digital input pin. When an interrupt occurs (a change is detected), the processor stops the execution of the main program and a function is called upon known as ISR or the Interrupt Service Routine. The processor then temporarily works on a different task (ISR) and then gets back to the main program after the handling routine has ended.
@@ -49,12 +38,9 @@ The STM32 ARM microcontroller interrupts are generated in the following manner:
 
 The system runs the ISR and then goes back to the main program. The NVIC and EXTI are configured. The Interrupt Service Routine (ISR) also known as the interrupt service routine handler is defined to enable the external interrupts.
 
- 
 Interrupt Lines (EXTI0-EXTI15)
 The STM32 ARM microcontroller features 23 event sources which are divided into two sections. The first section corresponds t external pins on each port which are P0-P15. The second section corresponds to RTC, ethernet, USB interrupts. Therefore, in the first section, we have 16 lines corresponding to line0 till line15. All of these map to a pin number.
 ![image](https://github.com/vasanthkumarch/EXPERIMENT--04-INTERUPT-GENRATION-USING-SENSOR-AND-VISUALIZING-USING-SERIAL-MONITOR/assets/36288975/1110746f-6be2-4d12-9a34-66004e4b307b)
-
-
 The diagram below shows how the GPIO pins are connected to the 16 interrupt lines:
 ## Procedure:
  1. click on STM 32 CUBE IDE, the following screen will appear 
@@ -116,6 +102,9 @@ The diagram below shows how the GPIO pins are connected to the 16 interrupt line
 
 ## STM 32 CUBE PROGRAM :
 ```
+NAME: Prabha C
+REG NO : 212222110032
+
 #include "main.h"
 #include"stdio.h"
 #if defined(__ICCARM__) || defined(__ARMCC_VERSION)
